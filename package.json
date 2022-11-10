@@ -1,0 +1,22 @@
+{
+  "name": "nightwatch-custom-commands",
+  "version": "1.0.0",
+  "description": "Some nightwatch custom commands which doesnt work natively",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmahata/nightwatch-custom-commands.git"
+  },
+  "keywords": [
+    "nightwatch"
+  ],
+  "author": "kaushik mahata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmahata/nightwatch-custom-commands/issues"
+  },
+  "homepage": "https://github.com/kmahata/nightwatch-custom-commands#readme"
+}
