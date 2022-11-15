@@ -3,7 +3,7 @@ This package allows you to perform some custom commands which natively fails in 
 
 ### Commands Available :
 
-#### Custom Click -
+#### 1. Custom Click -
 Use when nighwatch native click fails
 
 ##### Usage
@@ -29,6 +29,22 @@ this.customClick('#locatorValueAsString', "Custom Message" )
 @param {string|Object} definition The selector (CSS/Xpath) used to locate the element. Can either be a string or an object which specifies [element properties](https://nightwatchjs.org/guide#element-properties).
 
 @param {string} [msg] Optional log message to display in the output. If missing, one is displayed by default.
+
+
+#### 2. Custom Log -
+When console.log() is used from nightwatch tests , it makes asynchronous call. Use customLog() to replicate synchronous behaviour. Helpful for debugging
+
+##### Usage
+
+```
+it('Usage of customLog',  client => {
+  ------code---
+  client.customLog("Custom Message")
+});
+```
+@method customLog
+@param {string} definition The log message which needs to be printed
+
 
 ### Installation 
 
