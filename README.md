@@ -18,7 +18,7 @@ it('Usage of custom click',  client => {
   pageObject.customClick('#locatorValueAsString', "Custom Message" )
 });
 
-// inside page object
+//from inside page object
 this.customClick('@locatorReference', "Custom Message")
 this.customClick('#locatorValueAsString', "Custom Message" )
 
@@ -30,8 +30,37 @@ this.customClick('#locatorValueAsString', "Custom Message" )
 
 @param {string} [msg] Optional log message to display in the output. If missing, one is displayed by default.
 
+#### 2. Is Element Present -
+Check if an element is present and returns true or false. 
 
-#### 2. Custom Log -
+##### Usage
+
+```
+it('Usage of is Elem present',  client => {
+ *  if( client.isElemPresent('@locatorReference', 6000, "Custom Message")){
+ *    //perform some action
+ * } else {
+ *     // perform some other action
+ * }
+ *   if( client.isElemPresent('#locatorReference', 6000, "Custom Message")){
+ *    //perform some action
+ * } else {
+ *     // perform some other action
+ * }
+ * });
+```
+
+ @method isElemPresent
+
+@param {string|Object} definition The selector (CSS/Xpath) used to locate the element. Can either be a string or an object which specifies [element properties](https://nightwatchjs.org/guide#element-properties).
+  
+@param {number} [time] Time in milliseconds to wait for the element to be present, By default waits for 2000 milliseconds
+
+@param {string} [msg] Optional log message to display in the output. If missing, one is displayed by default.
+
+@returns {boolean}
+
+#### 3. Custom Log -
 When console.log() is used from nightwatch tests , it makes asynchronous call. Use customLog() to replicate synchronous behaviour. Helpful for debugging
 
 ##### Usage
