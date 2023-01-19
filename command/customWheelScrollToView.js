@@ -4,7 +4,7 @@
  *
  * ```
  * it('Usage of customWheelScrollToView',  client => {
- *   if(client.customWheelScrollToView('css locator'))
+ *   client.customWheelScrollToView('css locator')
  *
  * });
  * ```

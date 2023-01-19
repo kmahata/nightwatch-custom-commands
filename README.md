@@ -37,17 +37,17 @@ Check if an element is present and returns true or false.
 
 ```
 it('Usage of is Elem present',  client => {
- *  if( client.isElemPresent('@locatorReference', 6000, "Custom Message")){
- *    //perform some action
- * } else {
- *     // perform some other action
- * }
- *   if( client.isElemPresent('#locatorReference', 6000, "Custom Message")){
- *    //perform some action
- * } else {
- *     // perform some other action
- * }
- * });
+  if( client.isElemPresent('@locatorReference', 6000, "Custom Message")){
+     //perform some action
+  } else {
+     // perform some other action
+ }
+    if( client.isElemPresent('#locatorReference', 6000, "Custom Message")){
+    //perform some action
+  } else {
+     // perform some other action
+ }
+  });
 ```
 
  @method isElemPresent
@@ -80,10 +80,10 @@ Check if an element is in viewport and returns true or false. Useful to test sce
 ##### Usage
 
 ```
- * it('Usage of isElementInViewport',  client => {
- *   if(client.isElementInViewport('css locator'))
- *
- * });
+ it('Usage of isElementInViewport',  client => {
+    if(client.isElementInViewport('css locator'))
+ 
+  });
  ```
 
  @method isElemInViewport
@@ -98,10 +98,10 @@ Use selenium wheel action to scroll to a certain webelement
 ##### Usage
 
 ```
- * it('Usage of customWheelScrollToView',  client => {
- *   if(client.customWheelScrollToView('css locator/selenium webelement'))
- *
- * });
+  it('Usage of customWheelScrollToView',  client => {
+    client.customWheelScrollToView('css locator/selenium webelement')
+ 
+  });
  ```
 
  @method customWheelScrollToView

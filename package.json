@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-custom-commands",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Some nightwatch custom commands which doesnt work natively",
   "main": "index.js",
   "scripts": {
