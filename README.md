@@ -74,6 +74,40 @@ it('Usage of customLog',  client => {
 @method customLog
 @param {string} definition The log message which needs to be printed
 
+#### 4. Is Element In Viewport -
+Check if an element is in viewport and returns true or false. Useful to test scenarios when clicking on certain tile lands on certain section of the webpage. Also can be used to certain certain section is anchored while scrolling the webpage
+
+##### Usage
+
+```
+ * it('Usage of isElementInViewport',  client => {
+ *   if(client.isElementInViewport('css locator'))
+ *
+ * });
+ ```
+
+ @method isElemInViewport
+
+@param {string} definition The selector (CSS) used to locate the element. Supports only css for now
+
+@returns {boolean} Can be true or false depending on if the element is in active view in browser
+
+#### 5. wheel scroll to element -
+Use selenium wheel action to scroll to a certain webelement
+
+##### Usage
+
+```
+ * it('Usage of customWheelScrollToView',  client => {
+ *   if(client.customWheelScrollToView('css locator/selenium webelement'))
+ *
+ * });
+ ```
+
+ @method customWheelScrollToView
+
+@param {string/object} definition The selector (CSS) or selenium webelement used to locate the element.
+
 
 ### Installation 
 
